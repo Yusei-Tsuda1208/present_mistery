@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>端末データダッシュボード</title>
+<style>
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 2rem;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.device-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    border-collapse: collapse;
+}
+.device-table th, .device-table td {
+    padding: 0.8rem 1rem;
+    border: 1px solid #555;
+}
+.device-table th {
+    background: #2c3e50;
+}
+.device-table td {
+    text-align: center;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card {
+    background: #2c3e50;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #ff9999;
+}
+.card p {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>端末データダッシュボード</h1>
+
+<table class="device-table">
+    <thead>
+        <tr>
+            <th>端末名</th>
+            <th>温度 (℃)</th>
+            <th>電圧 (V)</th>
+            <th>稼働状況</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>端末A</td>
+            <td>36</td>
+            <td>5.0</td>
+            <td>稼働中</td>
+        </tr>
+        <tr>
+            <td>端末B</td>
+            <td>40</td>
+            <td>4.8</td>
+            <td>停止中</td>
+        </tr>
+        <tr>
+            <td>端末C</td>
+            <td>37</td>
+            <td>5.1</td>
+            <td>稼働中</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="card-container">
+    <div class="card">
+        <h3>平均温度</h3>
+        <p>37.7℃</p>
+    </div>
+    <div class="card">
+        <h3>最大電圧</h3>
+        <p>5.1V</p>
+    </div>
+    <div class="card">
+        <h3>稼働端末数</h3>
+        <p>2 / 3</p>
+    </div>
+</div>
+
+<h1>村儀によりデータ改ざんがされています</h1>
+
+</body>
+</html>
